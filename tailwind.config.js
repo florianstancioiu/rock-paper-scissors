@@ -13,6 +13,7 @@ export default {
         'primary-border': 'rgba(255, 255, 255, 0.29)',
         secondary: '#565468',
         ternary: '#2A45C2',
+        rules: '#3B4262',
       },
       fontFamily: {
         'barlow-semi-condensed': ['Barlow Semi Condensed', 'sans-serif'],
