@@ -9,7 +9,6 @@ const App = () => {
   const [showRules, setShowRules] = useState(false);
 
   const BtnClickHandler = () => {
-    console.log('change the damn previous value');
     setShowRules((previousValue) => !previousValue);
   };
 
