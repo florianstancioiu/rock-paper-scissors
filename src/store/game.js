@@ -30,7 +30,7 @@ const gameSlice = createSlice({
       const playerChoice = state.currentGame.playerChoice;
       const possibleChoices = [...state.possibleChoices];
 
-      if (state.currentGame.playerChoice === null) {
+      if (playerChoice === null) {
         return false;
       }
 

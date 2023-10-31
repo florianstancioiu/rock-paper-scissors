@@ -14,13 +14,10 @@ const GamePicked = () => {
   );
 
   useEffect(() => {
-    if (playerChoice !== null) {
-      setTimeout(() => {
-        dispatch(gameActions.setPcChoice());
-        dispatch(gameActions.setStage({ stage: 'result' }));
-        dispatch(gameActions.setWinner());
-      }, 1000);
-    }
+    setTimeout(() => {
+      dispatch(gameActions.setStage({ stage: 'result' }));
+      dispatch(gameActions.setWinner());
+    }, 1000);
   }, []);
 
   return (

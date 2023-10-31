@@ -10,6 +10,7 @@ const GameInitial = () => {
   const choiceClickHandler = (choice) => {
     dispatch(gameActions.setPlayerChoice({ choice }));
     dispatch(gameActions.setStage({ stage: 'picked' }));
+    dispatch(gameActions.setPcChoice());
   };
 
   return (
