@@ -59,7 +59,7 @@ const GamePicked = () => {
           The house picked
         </p>
         <img
-          className='block mx-auto mb-[29px] mt-[16px] md:w-[225px] md:mt-[97px]'
+          className='block mx-auto mb-[29px] mt-[16px] w-[110px] md:w-[225px] md:mt-[97px]'
           src={IconPlaceholder}
           alt=''
         />
