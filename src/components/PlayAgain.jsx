@@ -13,7 +13,7 @@ const PlayAgain = () => {
   };
 
   return (
-    <div className='max-w-[375px] mx-auto text-center mb-[34px] mt-[62px]'>
+    <div className='max-w-[375px] mx-auto text-center mb-[34px] mt-[62px] md:relative md:top-[-290px]'>
       <p className='text-white text-[56px] mb-[16px] uppercase'>
         {matchResult}
       </p>

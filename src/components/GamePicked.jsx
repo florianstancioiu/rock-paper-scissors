@@ -21,30 +21,49 @@ const GamePicked = () => {
   }, []);
 
   return (
-    <div className='flex justify-between max-w-[375px] mx-auto mb-[230px]'>
+    <div className='flex justify-between max-w-[375px] mx-auto mb-[230px] md:max-w-[700px]'>
       <div className='text-center'>
+        <p className='text-white uppercase text-[24px] leading-[32px] hidden md:block mb-[63px]'>
+          You picked
+        </p>
+
         {playerChoice === 'rock' && (
-          <img className='block mx-auto mb-[17px]' src={IconRock} alt='' />
+          <img
+            className='block mx-auto mb-[17px] w-[130px] md:w-[293px]'
+            src={IconRock}
+            alt=''
+          />
         )}
 
         {playerChoice === 'scissors' && (
-          <img className='block mx-auto mb-[17px]' src={IconScissors} alt='' />
+          <img
+            className='block mx-auto mb-[17px] w-[130px] md:w-[293px]'
+            src={IconScissors}
+            alt=''
+          />
         )}
 
         {playerChoice === 'paper' && (
-          <img className='block mx-auto mb-[17px]' src={IconPaper} alt='' />
+          <img
+            className='block mx-auto mb-[17px] w-[130px] md:w-[293px]'
+            src={IconPaper}
+            alt=''
+          />
         )}
-        <p className='text-white uppercase text-[15px] leading-[32px]'>
+        <p className='text-white uppercase text-[15px] leading-[32px] md:hidden'>
           You picked
         </p>
       </div>
       <div className='text-center'>
+        <p className='text-white uppercase text-[24px] leading-[32px] hidden md:block mb-[63px]'>
+          The house picked
+        </p>
         <img
-          className='block mx-auto mb-[29px] mt-[16px]'
+          className='block mx-auto mb-[29px] mt-[16px] md:w-[225px] md:mt-[97px]'
           src={IconPlaceholder}
           alt=''
         />
-        <p className='text-white uppercase text-[15px] leading-[32px]'>
+        <p className='text-white uppercase text-[15px] leading-[32px] md:hidden'>
           The house picked
         </p>
       </div>

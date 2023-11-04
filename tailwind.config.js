@@ -9,6 +9,10 @@ export default {
         'gradient-linear': 'linear-gradient(0deg, #F3F3F3 0%, #FFF 100%)',
         'game-image': "url('/images/game-bg.png')",
       }),
+      boxShadow: {
+        winner:
+          'rgba(0, 0, 0, 0.197) 0px 3px 3px, rgba(255, 255, 255, 0.05) 0px 0px 0px 30px, rgba(255, 255, 255, 0.02) 0px 0px 0px 60px, rgba(255, 255, 255, 0.02) 0px 0px 0px 100px;',
+      },
       colors: {
         'primary-border': 'rgba(255, 255, 255, 0.29)',
         secondary: '#565468',
