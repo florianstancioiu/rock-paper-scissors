@@ -10,6 +10,16 @@ const GameResult = () => {
     (state) => state.game.currentGame.playerChoice
   );
   const pcChoice = useSelector((state) => state.game.currentGame.pcChoice);
+  const playerWinner = useSelector(
+    (state) => state.game.currentGame.playerWinner
+  );
+
+  const playerWinnerBorderClasses = playerWinner
+    ? 'rounded-full shadow-winner'
+    : '';
+  const pcWinnerBorderClasses = !playerWinner
+    ? 'rounded-full shadow-winner'
+    : '';
 
   return (
     <div>
@@ -18,7 +28,7 @@ const GameResult = () => {
           <p className='text-white uppercase text-[24px] leading-[32px] hidden md:block mb-[63px]'>
             You picked
           </p>
-          <div className='rounded-full shadow-winner'>
+          <div className={playerWinnerBorderClasses}>
             {playerChoice === 'rock' && (
               <img
                 className='block mx-auto mb-[17px] w-[130px] md:w-[293px]'
@@ -51,7 +61,7 @@ const GameResult = () => {
           <p className='text-white uppercase text-[24px] leading-[32px] hidden md:block mb-[63px]'>
             The house picked
           </p>
-          <div className='rounded-full shadow-winner'>
+          <div className={pcWinnerBorderClasses}>
             {pcChoice === 'scissors' && (
               <img
                 className='block mx-auto mb-[17px] w-[130px] md:w-[293px]'
